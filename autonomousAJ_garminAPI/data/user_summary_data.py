@@ -11,9 +11,7 @@ class User_Summary_Data:
 
     def get_and_process_data(self):
         data = self.user_summary.get_user_summary()
-        df = pd.DataFrame(data)
-        return df
+        print(data)
 
     def save_data(self, df):
-        # df.to_csv(FILE_PATH, index=False)
         print(df)
